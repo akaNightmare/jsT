@@ -19,7 +19,7 @@ jsT
 ```
 4. Унаследуем с Controller c JsTController
 3. исмользуем
-``js
+```js
   alert (Yii.t('any words'));
   alert (_t('any words'));
 ```
