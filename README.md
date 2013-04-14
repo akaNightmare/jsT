@@ -4,7 +4,8 @@ jsT
 Для этого он использует уже готовые PHP-переводы. То есть если у вас на странице исользуются слова с app-словаря,
 все слова из этого словаря автоматически подключатся для JS.
 
-1. подключаем в main.php
+1. Кидаем папку в protected/extension
+2. подключаем в main.php
 
   'import' => array(
       //  ...
@@ -19,9 +20,12 @@ jsT
       ),
       //  ...
   ),
-2. исмользуем
-  Yii.t('any words');
-  _t('any words');
+4. Унаследуем с Controller c JsTController
+3. исмользуем
+<script>
+  alert (Yii.t('any words'));
+  alert (_t('any words'));
+</script>
 
 Примечания
 ===
