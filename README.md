@@ -6,7 +6,7 @@ jsT
 
 1. Кидаем папку в protected/extension
 2. подключаем в main.php
-
+```php
   'import' => array(
       'ext.yii-js-t.*',
   )
@@ -16,13 +16,13 @@ jsT
           'class' => 'JsTPhpMessageSource'
       ),
   ),
+```
 4. Унаследуем с Controller c JsTController
 3. исмользуем
-<script>
+``js
   alert (Yii.t('any words'));
   alert (_t('any words'));
-</script>
-
+```
 Примечания
 ===
 Если у вас нет перевода некоторого сообщения, Вам понадобиться включить его в соварь на PHP стороне.
